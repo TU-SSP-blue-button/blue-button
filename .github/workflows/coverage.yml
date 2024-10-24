@@ -4,17 +4,27 @@ on: [push, pull_request]
 
 jobs:
   coverage:
-    runs-on: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
     steps:
       - uses: actions/checkout@v3
+      
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-      - run: npm install
-      - run: grunt run:coverage
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run Grunt Coverage
+        run: grunt run:coverage
+      
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
         with:
-          name: coverage-report
+          name: coverage-report-${{ matrix.os }}
           path: ./coverage
