@@ -10,4 +10,4 @@
 
 # Windows Compatibility
 
-- Updated code that failed testing on Windows only to be compatible with Windows
+- Updated code that failed testing only on Windows to work with all OS: added line in lib/sense.js to normalize all whitespaces
