@@ -1,6 +1,6 @@
 {
   "name": "@tu-ssp-blue-button/blue-button",
-  "version": "1.10.12",
+  "version": "1.10.13",
   "description": "Blue Button (CCDA, C32, CMS) to JSON Parser. Forked from @amida-tech/blue-button.",
   "main": "./index.js",
   "directories": {
