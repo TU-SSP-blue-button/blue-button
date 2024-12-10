@@ -1,7 +1,7 @@
 {
-  "name": "@amida-tech/blue-button",
-  "version": "1.10.11",
-  "description": "Blue Button (CCDA, C32, CMS) to JSON Parser.",
+  "name": "@tu-ssp-blue-button/blue-button",
+  "version": "1.10.12",
+  "description": "Blue Button (CCDA, C32, CMS) to JSON Parser. Forked from @amida-tech/blue-button.",
   "main": "./index.js",
   "directories": {
     "doc": "doc",
@@ -36,6 +36,10 @@
     {
       "name": "Marc Sylvestre",
       "email": "marc.sylvestre@manhydra.com"
+    },
+    {
+      "name": "Trinity University Computer Science Department",
+      "email": "bhorn@trinity.edu"
     }
   ],
   "license": "Apache-2.0",
